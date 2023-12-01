@@ -435,7 +435,7 @@ h3:first-of-type {
 }
 
 .logos:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 
@@ -466,7 +466,6 @@ h3:first-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
     margin-left: 10px;
     transition: .5s;
     border: 3px solid var(--hovblue);
@@ -558,42 +557,34 @@ img {
 
 .projectOne {
     background-image: url(../images/sites/carpenter_full.png);
-    background-size: cover;
 }
 
 .projectTwo {
     background-image: url(../images/sites/electra_full.png);
-    background-size: cover;
 }
 
 .projectThree {
     background-image: url(../images/sites/firstguaranty_full.png);
-    background-size: cover;
 }
 
 .projectFour {
     background-image: url(../images/sites/americold_full.png);
-    background-size: cover;
 }
 
 .projectFive {
     background-image: url(../images/sites/knowles_full.png);
-    background-size: cover;
 }
 
 .projectSix {
     background-image: url(../images/sites/centric_full.png);
-    background-size: cover;
 }
 
 .projectSeven {
     background-image: url(../images/projects/simpsons_trivia.png);
-    background-size: cover;
 }
 
 .projectEight {
     background-image: url(../images/projects/picacolour.png);
-    background-size: cover;
 }
 
 
@@ -607,6 +598,8 @@ img {
     transition: 0.5s;
     height: calc((100vw / 3) - 20px);
     border: 3px solid var(--darkgrey);
+    background-size: cover;
+    background-position: top;
 }
 
 .projectoverlay {
@@ -693,10 +686,6 @@ img {
         font-weight: 400;
         position: relative;
     }
-
-    & a:hover {
-        text-decoration: underline;
-    }
 }
 
 .projects:last-of-type {
@@ -721,6 +710,7 @@ img {
 
     & span:hover {
         color: var(--hovblue);
+        transform: scale(1.2);
     }
 }
 
