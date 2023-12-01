@@ -556,15 +556,44 @@ img {
     border: 2px solid #000;
 }
 
+.projectOne {
+    background-image: url(../images/sites/carpenter_full.png);
+    background-size: cover;
+}
+
+.projectTwo {
+    background-image: url(../images/sites/electra_full.png);
+    background-size: cover;
+}
+
+.projectThree {
+    background-image: url(../images/sites/firstguaranty_full.png);
+    background-size: cover;
+}
+
+.projectFour {
+    background-image: url(../images/sites/americold_full.png);
+    background-size: cover;
+}
+
+.projectFive {
+    background-image: url(../images/sites/knowles_full.png);
+    background-size: cover;
+}
+
+.projectSix {
+    background-image: url(../images/sites/centric_full.png);
+    background-size: cover;
+}
 
 .projectcard {
-    width: calc((100% / 3) - 20px);
+    width: calc((100vw / 3) - 20px);
     min-width: 200px;
     margin: 20px;
     flex-grow: 1;
     position: relative;
     transition: 0.5s;
-    height: calc((100% / 3) - 20px);
+    height: calc((100vw / 3) - 20px);
     border: 3px solid var(--darkgrey);
 }
 
@@ -584,7 +613,7 @@ img {
 }
 
 .projectcard:hover .projectoverlay {
-    opacity: .8;
+    opacity: .9;
 }
 
 .projectcard img {
@@ -596,13 +625,14 @@ img {
 
 .overlaytext {
     position: absolute;
-    top: 250px;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
 .overlaytext a {
