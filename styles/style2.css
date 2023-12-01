@@ -435,7 +435,7 @@ h3:first-of-type {
 }
 
 .logos:hover {
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 
@@ -586,6 +586,18 @@ img {
     background-size: cover;
 }
 
+.projectSeven {
+    background-image: url(../images/projects/simpsons_trivia.png);
+    background-size: cover;
+}
+
+.projectEight {
+    background-image: url(../images/projects/picacolour.png);
+    background-size: cover;
+}
+
+
+
 .projectcard {
     width: calc((100vw / 3) - 20px);
     min-width: 200px;
@@ -734,6 +746,8 @@ footer {
     }
 }
 
-.frontend {
+.frontend,
+.professionaldev {
     display: flex;
+    flex-wrap: wrap;
 }
