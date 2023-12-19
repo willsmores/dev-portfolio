@@ -434,7 +434,7 @@ h3:first-of-type {
     margin-top: 50px;
 }
 
-.logos:hover {
+.logos:has(:hover, :focus) {
     transform: scale(1.2);
 }
 
@@ -476,7 +476,7 @@ h3:first-of-type {
 }
 
 header p {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding-bottom: 0;
 }
 
@@ -622,7 +622,8 @@ img {
     opacity: 0;
     visibility: none;
     transition: .5s ease;
-    background-color: var(--darkgrey);
+    /* background-color: var(--darkgrey); */
+    background: linear-gradient(180deg, rgba(33, 145, 251, 1) 0%, #151618 100%);
     border: 3px solid var(--hovblue);
 }
 
@@ -717,7 +718,8 @@ img {
         transition: .2s;
     }
 
-    & span:hover {
+    & span:hover,
+    span:focus {
         color: var(--hovblue);
         transform: scale(1.2);
     }
@@ -750,3 +752,40 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+@media (width <= 970px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    p {
+        width: 60%;
+        line-height: 1.2;
+    }
+
+    .avatar img {
+        width: 200px;
+    }
+    
+    .projectcard {
+        width: 90%;
+    }
+
+    .backend,
+    .frontend,
+    .professionaldev {
+        justify-content: center;
+    }
+
+    .logos {
+        width: 50px;
+        height: 50px;
+        margin-left: 3px;
+    }
+  }
