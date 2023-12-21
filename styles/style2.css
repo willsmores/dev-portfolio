@@ -436,11 +436,13 @@ h3:first-of-type {
 
 .logos:has(:hover, :focus) {
     transform: scale(1.2);
+    color: var(--hovblue);
 }
 
 
 .logoZoom {
-    animation: highlight .7s 1;
+    animation: highlight 2s 1;
+    
 }
 
 @keyframes highlight {
@@ -448,8 +450,17 @@ h3:first-of-type {
         transform: scale(1);
     }
 
+    25% {
+        color: var(--hovblue);
+    }
+
     50% {
         transform: scale(1.5);
+        
+    }
+
+    75% {
+        color: hotpink;
     }
 
     100% {
@@ -457,7 +468,7 @@ h3:first-of-type {
     }
 }
 
-.logos {
+/* .logos {
     width: 75px;
     height: 75px;
     background-color: white;
@@ -469,6 +480,22 @@ h3:first-of-type {
     margin-left: 10px;
     transition: .5s;
     border: 3px solid var(--hovblue);
+} */
+
+.logos {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 50px;
+    grid-template-rows: 50px;
+    /* background-color: white;
+    border: 3px solid var(--hovblue); */
+    padding: 10px;
+    transition: .2s;
+    
+}
+
+.logos i {
+    font-size: 5rem;
 }
 
 .logos img {
@@ -620,7 +647,7 @@ img {
     height: 100%;
     width: 100%;
     opacity: 0;
-    visibility: none;
+    visibility: hidden;
     transition: .5s ease;
     /* background-color: var(--darkgrey); */
     background: linear-gradient(180deg, rgba(33, 145, 251, 1) 0%, #151618 100%);
@@ -628,6 +655,7 @@ img {
 }
 
 .projectcard:hover .projectoverlay {
+    visibility: visible;
     opacity: .9;
 }
 
