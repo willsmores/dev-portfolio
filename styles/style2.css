@@ -460,7 +460,7 @@ h3:first-of-type {
     }
 
     75% {
-        color: hotpink;
+        color: lime;
     }
 
     100% {
@@ -484,11 +484,7 @@ h3:first-of-type {
 
 .logos {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 50px;
-    grid-template-rows: 50px;
-    /* background-color: white;
-    border: 3px solid var(--hovblue); */
+    grid-template-columns: 60px;
     padding: 10px;
     transition: .2s;
     
@@ -500,6 +496,10 @@ h3:first-of-type {
 
 .logos img {
     max-height: 55px;
+}
+
+header h2 {
+    margin-top: 0;
 }
 
 header p {
@@ -781,6 +781,8 @@ footer {
     flex-wrap: wrap;
 }
 
+
+/* Media Queries */
 
 @media (width <= 970px) {
     h1 {
