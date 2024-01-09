@@ -315,7 +315,7 @@ button,
 label,
 h4 {
     font-family: 'Lexend Deca', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--offwhite);
 }
 
@@ -332,16 +332,16 @@ h4 {
 
 a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition: .2s;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 1.8rem;
     padding-top: 20px;
 }
 
@@ -352,8 +352,8 @@ h4 {
 p,
 button,
 label {
-    font-size: 1.8rem;
-    padding: 40px 0;
+    font-size: 1.6rem;
+    padding: 10px 0 0 0;
     line-height: 3.2rem;
     letter-spacing: 1px;
 }
@@ -419,8 +419,8 @@ h2 {
 }
 
 h3 {
-    font-size: 2.6rem;
-    font-weight: 200;
+    /* font-size: 2.6rem; */
+    font-weight: 300;
     margin-top: 100px;
 }
 
@@ -442,7 +442,6 @@ h3:first-of-type {
 
 .logoZoom {
     animation: highlight 2s 1;
-    
 }
 
 @keyframes highlight {
