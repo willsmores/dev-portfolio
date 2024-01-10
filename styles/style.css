@@ -328,7 +328,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding-top: 20px;
 }
 
@@ -359,7 +359,7 @@ header {
   height: 100svh;
 }
 header h2 {
-  margin-top: 0;
+  margin: 10px 0 10px 0;
 }
 header p {
   font-size: 1.8rem;
@@ -561,12 +561,13 @@ img {
   position: relative;
   transition: 0.5s;
   height: 400px;
-  border: 3px solid var(--darkgrey);
+  border: 3px solid #28292a;
   background-size: cover;
   background-position: top;
 }
 .projectcard p {
   width: 100%;
+  color: #fff;
 }
 .projectoverlay {
   position: absolute;
@@ -580,8 +581,8 @@ img {
   visibility: hidden;
   transition: 0.5s ease;
   /* background-color: var(--darkgrey); */
-  background: linear-gradient(180deg, rgb(33, 145, 251) 0%, #151618 100%);
-  border: 3px solid #2191FB;
+  background: linear-gradient(180deg, #004a77 0%, #28292a 100%);
+  border: 2px solid #2191FB;
 }
 .projectcard img {
   display: block;
@@ -609,12 +610,24 @@ img {
   flex-direction: column;
   align-items: center;
 }
-
 .overlaytext a {
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
-
+.overlaytext p {
+  color: #fff;
+  width: 75%;
+}
+.overlaytext p:first-of-type {
+  margin-bottom: 10px;
+}
+.overlaytext h3 {
+  color: #fff;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
 .overlaytext ul {
   margin-top: 30px;
 }
@@ -693,10 +706,15 @@ footer a:hover {
   .professionaldev {
     justify-content: center;
   }
+}
+@media (width <= 700px) {
   .logos {
     width: 50px;
     height: 50px;
     margin-left: 3px;
+  }
+  .logos i {
+    font-size: 4rem;
   }
 }
 

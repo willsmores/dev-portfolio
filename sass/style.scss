@@ -304,6 +304,9 @@ $brightblue: #2191FB;
 
 body {
     background-color: $darkgrey;
+    // background-image: url("/images/webb-dark.png");
+    // background-repeat: repeat;
+    // background-attachment: fixed;
 }
 
 p,
@@ -339,7 +342,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding-top: 20px;
 }
 
@@ -380,7 +383,7 @@ header {
     height: 100svh;
 
     h2 {
-        margin-top: 0;
+        margin: 10px 0 10px 0;
     }
 
     p {
@@ -611,12 +614,13 @@ img {
         position: relative;
         transition: 0.5s;
         height: 400px;
-        border: 3px solid var(--darkgrey);
+        border: 3px solid $darkgrey;
         background-size: cover;
         background-position: top;
 
         p {
             width: 100%;
+            color: #fff;
         }
     }
 
@@ -632,8 +636,8 @@ img {
         visibility: hidden;
         transition: .5s ease;
         /* background-color: var(--darkgrey); */
-        background: linear-gradient(180deg, rgba(33, 145, 251, 1) 0%, #151618 100%);
-        border: 3px solid $brightblue;
+        background: linear-gradient(180deg, rgba($darkblue, 1) 0%, $darkgrey 100%);
+        border: 2px solid $brightblue;
     }
 
     &card img {
@@ -694,17 +698,33 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.overlaytext a {
-    color: white;
-    font-size: 2rem;
-}
+    a {
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
 
-.overlaytext ul {
-    margin-top: 30px;
-}
+    p {
+        color: #fff;
+        width: 75%;
 
+        &:first-of-type {
+            margin-bottom: 10px;
+        }
+    }
+
+    h3 {
+        color: #fff;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        margin-top: 30px;
+    }
+}
 
 .projects:last-of-type {
     margin-bottom: 50px;
@@ -792,9 +812,18 @@ footer {
         justify-content: center;
     }
 
+}
+
+@media (width <=700px) {
+
+
     .logos {
         width: 50px;
         height: 50px;
         margin-left: 3px;
+
+        i {
+            font-size: 4rem;
+        }
     }
 }
