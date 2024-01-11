@@ -356,6 +356,14 @@ li {
   list-style: none;
 }
 
+.creativity {
+  color: hotpink;
+}
+
+.precision {
+  color: #2191FB;
+}
+
 /* header */
 header {
   height: 100svh;
@@ -484,6 +492,7 @@ h3:first-of-type {
   align-items: center;
   text-align: center;
   height: 100vh;
+  padding-top: 0;
 }
 
 header li {
